@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+	<class>WebDAVSettings</class>
+	<widget class="QDialog" name="WebDAVSettings">
+		<property name="geometry">
+			<rect>
+				<x>0</x>
+				<y>0</y>
+				<width>300</width>
+				<height>350</height>
+			</rect>
+		</property>
+		<property name="sizePolicy">
+			<sizepolicy hsizetype="Fixed" vsizetype="Fixed"/>
+		</property>
+		<property name="minimumSize">
+			<size>
+				<width>300</width>
+				<height>350</height>
+			</size>
+		</property>
+		<property name="maximumSize">
+			<size>
+				<width>300</width>
+				<height>350</height>
+			</size>
+		</property>
+		<property name="windowTitle">
+			<string>WebDAV Settings</string>
+		</property>
+		<layout class="QVBoxLayout" name="verticalLayout">
+			<item>
+				<widget class="QGroupBox" name="group_url">
+					<property name="sizePolicy">
+						<sizepolicy hsizetype="Fixed" vsizetype="Fixed"/>
+					</property>
+					<property name="minimumSize">
+						<size>
+							<width>280</width>
+							<height>0</height>
+						</size>
+					</property>
+					<property name="title">
+						<string>Upload</string>
+					</property>
+					<layout class="QVBoxLayout" name="verticalLayout">
+						<item>
+							<layout class="QFormLayout" name="formLayout">
+								<item row="1" column="0">
+									<widget class="QLabel" name="label_url">
+										<property name="minimumSize">
+											<size>
+												<width>40</width>
+												<height>0</height>
+											</size>
+										</property>
+										<property name="text">
+											<string>URL:</string>
+										</property>
+									</widget>
+								</item>
+								<item row="1" column="1">
+									<widget class="QLineEdit" name="input_url"/>
+								</item>
+								<item row="2" column="0">
+									<widget class="QLabel" name="label_username">
+										<property name="minimumSize">
+											<size>
+												<width>40</width>
+												<height>0</height>
+											</size>
+										</property>
+										<property name="text">
+											<string>Username:</string>
+										</property>
+									</widget>
+								</item>
+								<item row="2" column="1">
+									<widget class="QLineEdit" name="input_username"/>
+								</item>
+								<item row="3" column="0">
+									<widget class="QLabel" name="label_password">
+										<property name="text">
+											<string>Password:</string>
+										</property>
+									</widget>
+								</item>
+								<item row="3" column="1">
+									<widget class="QLineEdit" name="input_password">
+										<property name="echoMode">
+											<enum>QLineEdit::Password</enum>
+										</property>
+									</widget>
+								</item>
+							</layout>
+						</item>
+						<item>
+							<layout class="QVBoxLayout" name="verticalLayout">
+								<item>
+									<widget class="QCheckBox" name="check_copylink">
+										<property name="text">
+											<string>Copy image link to clipboard</string>
+										</property>
+									</widget>
+								</item>
+							</layout>
+						</item>
+						<item>
+							<layout class="QFormLayout" name="formLayout">
+								<item row="0" column="0">
+									<widget class="QLabel" name="label_public">
+										<property name="minimumSize">
+											<size>
+												<width>40</width>
+												<height>0</height>
+											</size>
+										</property>
+										<property name="text">
+											<string>Public Host:</string>
+										</property>
+									</widget>
+								</item>
+								<item row="0" column="1">
+									<widget class="QLineEdit" name="input_public">
+										<property name="placeholderText">
+											<string>Example: https://example.com/images/</string>
+										</property>
+									</widget>
+								</item>
+							</layout>
+						</item>
+					</layout>
+				</widget>
+			</item>
+			<item>
+				<widget class="QGroupBox" name="group_screenshot">
+					<property name="sizePolicy">
+						<sizepolicy hsizetype="Fixed" vsizetype="Fixed"/>
+					</property>
+					<property name="minimumSize">
+						<size>
+							<width>280</width>
+							<height>0</height>
+						</size>
+					</property>
+					<property name="title">
+						<string>Screenshot</string>
+					</property>
+					<layout class="QVBoxLayout" name="verticalLayout">
+						<item>
+							<layout class="QFormLayout" name="formLayout">
+								<item row="0" column="0">
+									<widget class="QLabel" name="label_name">
+										<property name="minimumSize">
+											<size>
+												<width>40</width>
+												<height>0</height>
+											</size>
+										</property>
+										<property name="text">
+											<string>Name:</string>
+										</property>
+									</widget>
+								</item>
+								<item row="0" column="1">
+									<widget class="QLineEdit" name="input_name">
+										<property name="text"/>
+									</widget>
+								</item>
+								<item row="1" column="0">
+									<widget class="QLabel" name="label_result">
+										<property name="text">
+											<string>Example:</string>
+										</property>
+									</widget>
+								</item>
+								<item row="1" column="1">
+									<widget class="QLabel" name="label_example">
+										<property name="text"/>
+									</widget>
+								</item>
+							</layout>
+						</item>
+						<item>
+							<layout class="QVBoxLayout" name="verticalLayout">
+								<item>
+									<widget class="QCheckBox" name="check_savefile">
+										<property name="text">
+											<string>Save a copy locally</string>
+										</property>
+									</widget>
+								</item>
+							</layout>
+						</item>
+						<item>
+							<layout class="QFormLayout" name="formLayout">
+								<item row="0" column="0">
+									<widget class="QLabel" name="label_directory">
+										<property name="minimumSize">
+											<size>
+												<width>40</width>
+												<height>0</height>
+											</size>
+										</property>
+										<property name="text">
+											<string>Path:</string>
+										</property>
+									</widget>
+								</item>
+								<item row="0" column="1">
+									<layout class="QHBoxLayout" name="horizontalLayout">
+										<item>
+											<widget class="QLineEdit" name="input_directory">
+												<property name="text"/>
+											</widget>
+										</item>
+										<item>
+											<widget class="QPushButton" name="button_browse">
+												<property name="maximumSize">
+													<size>
+														<width>30</width>
+														<height>100</height>
+													</size>
+												</property>
+												<property name="FileMode">
+													<enum>QFileDialog::DirectoryOnly</enum>
+												</property>
+												<property name="text">
+													<string>...</string>
+												</property>
+											</widget>
+										</item>
+									</layout>
+								</item>
+							</layout>
+						</item>
+					</layout>
+				</widget>
+			</item>
+			<item>
+				<widget class="QDialogButtonBox" name="buttonBox">
+					<property name="orientation">
+						<enum>Qt::Horizontal</enum>
+					</property>
+					<property name="standardButtons">
+						<set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
+					</property>
+				</widget>
+			</item>
+		</layout>
+	</widget>
+	<tabstops>
+		<tabstop>input_url</tabstop>
+		<tabstop>input_username</tabstop>
+		<tabstop>input_password</tabstop>
+		<tabstop>check_copylink</tabstop>
+		<tabstop>input_public</tabstop>
+		<tabstop>input_name</tabstop>
+		<tabstop>check_savefile</tabstop>
+		<tabstop>input_directory</tabstop>
+		<tabstop>button_browse</tabstop>
+	</tabstops>
+	<resources/>
+	<connections>
+		<connection>
+			<sender>buttonBox</sender>
+			<signal>accepted()</signal>
+			<receiver>WebDAVSettings</receiver>
+			<slot>accept()</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>236</x>
+					<y>299</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>157</x>
+					<y>274</y>
+				</hint>
+			</hints>
+		</connection>
+		<connection>
+			<sender>buttonBox</sender>
+			<signal>rejected()</signal>
+			<receiver>WebDAVSettings</receiver>
+			<slot>reject()</slot>
+			<hints>
+				<hint type="sourcelabel">
+					<x>286</x>
+					<y>299</y>
+				</hint>
+				<hint type="destinationlabel">
+					<x>286</x>
+					<y>274</y>
+				</hint>
+			</hints>
+		</connection>
+	</connections>
+</ui>

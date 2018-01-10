@@ -1,0 +1,7 @@
+<metadata>
+	<name>WebDAV</name>
+	<shortname>WebDAV</shortname>
+	<className>WebDAVUploader</className>
+	<icon>icon.png</icon>
+	<version>0.1</version> <!-- replace with git tag magic -->
+</metadata>
